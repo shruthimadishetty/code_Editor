@@ -8,7 +8,7 @@
   width: 100%;
   height: 10vh;
   padding: 20px 100px;
-  background-color: rgb(230, 226, 226);
+  background-color: #735DA5;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -51,7 +51,7 @@
 .button_signup {
   width: 124px;
   height: 30px;
-  background-color: rgb(255, 115, 0);
+  background-color:#CEE6F2;
   border: none;
   color: black;
   font-size: 13px;
@@ -60,10 +60,19 @@
   text-transform: uppercase;
   cursor: pointer;
 }
+.button_darkmode{
+  cursor: pointer;
+  width: 60px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #222;
+}
 .main_container {
-  background-color: gray;
+  background-color: #D3C5E5;
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   display: flex;
 }
 .left_container {
@@ -81,7 +90,7 @@ textarea {
 }
 iframe {
   width: 100%;
-  height: 100vh;
+  height: 58vh;
   background-color: whitesmoke;
   border: 0;
   outline: 0;
@@ -91,6 +100,26 @@ iframe {
   width: 50%;
   padding: 25px 25px;
 }
+.button_console{
+  background-color: blueviolet;
+  font-size: 14px;
+  width: 120px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  color: whitesmoke;
+  font-weight: 600;
+  cursor: pointer;
+}
+#console-output{
+  width: 100%;
+  height: 18vh;
+  background-color: whitesmoke;
+  border: 0;
+  outline: 0;
+}
+
+
 /* Modal Styles */
 .modal {
   display: none;
@@ -116,7 +145,6 @@ iframe {
 }
 
 .modal-content h2 {
-  /* margin-top: 0; */
   text-align: center;
 }
 
@@ -171,11 +199,17 @@ iframe {
 
 /* dark mode */
 .dark-mode {
-  color: #222;
+  color: whitesmoke;
 }
-.button_darkmode{
-  background-color: #fefefe;
+.dark-mode .button_darkmode{
+  background-color: #222;
   cursor: pointer;
+  width: 60px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  fill: whitesmoke;
 }
 .dark-mode .nav_contianer,
 .dark-mode .modal-content {
@@ -193,26 +227,24 @@ iframe {
 }
 .dark-mode .button_login,
 .dark-mode .modal-content button {
-  background-color: #f0f1a5;
-  color: #222;
+  background-color: #301934;
+  color: whitesmoke;
+  border: 1px solid white
 }
 .dark-mode .button_signup{
   color: #ece5e5;
-  background-color: #f57f7f;
+  background-color: #301934;
+  border: 1px solid white;
 }
 
 .dark-mode .main_container {
-  background-color: #fefefe;
+  background-color: #301934;
 }
 .dark-mode textarea,
 .dark-mode .modal-content input {
   background-color: black;
   color: #fefefe;
 }
-/* .dark-mode iframe{
-  background-color: #222;
-  color: whitesmoke;
-} */
 .dark-mode iframe body{
   color: white;
 }
@@ -226,4 +258,3 @@ iframe {
 .dark-mode .modal-content label{
   color: #fefefe;
 }
-
