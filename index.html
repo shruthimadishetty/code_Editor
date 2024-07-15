@@ -38,11 +38,16 @@
           <i class="fa fa-moon-o"></i>
         </button>
         <button class="button_login" onclick="showModal('login-modal')">
-          Login
+          Log In
         </button>
         <button class="button_signup" onclick="showModal('signup-modal')">
-          Sign up
+          Sign Up
         </button>
+      </div>
+      <div class="menu_icon">
+        <div class="icon"></div>
+        <div class="icon"></div>
+        <div class="icon"></div>
       </div>
     </nav>
     <div class="main_container">
@@ -82,8 +87,9 @@
           </button>
           <button class="tab_button" onclick="showTab('console-tab')">
             Console <img src="terminal.png" alt="terminal" />
-          </button>
+          </button>          
         </div>
+
         <div id="output-tab" class="tab_content">
           <iframe id="output"></iframe>
         </div>
@@ -92,6 +98,7 @@
         </div>
       </div>
     </div>
+    
 
     <!-- Login Modal -->
     <div id="login-modal" class="modal">

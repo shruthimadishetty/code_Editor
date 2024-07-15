@@ -490,3 +490,57 @@ input::placeholder {
   font-weight: 700;
   font-size: 12px;
 }
+.icon{
+  display: none;
+}
+
+@media(max-width:650px){
+  .tab_button {
+    padding: 10px 0px;
+  }
+  .menu_icon{
+    padding-left:10px
+  }
+  .menu_icon .icon{
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+  }
+  .logo_container p{
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .button_login{
+    display: none;
+  }
+  .button_signup{
+    display: none;
+  }
+  .main_container{
+    flex-direction: column;
+    height: 170vh;
+    gap: 170px;
+
+  }
+  .left_container{
+    width: 100%;
+  }
+  textarea{
+    height: 50%;
+  }
+  iframe{
+    width: 330px;
+    max-width: 550px;
+  }
+  #console{
+    width: 330px;
+    max-width: 550px;
+
+  }
+  .nav_container{
+    padding: 20px 50px;
+  }
+
+}
